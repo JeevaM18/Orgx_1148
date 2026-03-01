@@ -20,13 +20,10 @@ It transforms raw transaction data into:
 
 ## 🏠 Landing Page
 
-```{=html}
 <p align="center">
-```
-`<img src="assets/A1.png" width="900"/>`{=html}
-```{=html}
+  <img src="./assets/A1.png" width="900">
 </p>
-```
+
 ImpulseGuard introduces behavioural finance as a gamified AI experience.
 
 ------------------------------------------------------------------------
