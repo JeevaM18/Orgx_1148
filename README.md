@@ -208,13 +208,10 @@ SHAP confirms:
 
 ## ⚔️ Battle Dashboard
 
-```{=html}
 <p align="center">
-```
-`<img src="assets/B1.png" width="900"/>`{=html}
-```{=html}
+  <img src="assets/B1.png" width="900"/>
 </p>
-```
+
 Displays: - Impulse Risk Score (0--100) - Risk Level (Low / Medium /
 High) - Boss Health Bar - Character mood based on risk
 
@@ -225,13 +222,10 @@ state - Low risk → calm state
 
 ## ⚠️ Upcoming Risk Warning
 
-```{=html}
 <p align="center">
-```
-`<img src="assets/B2.png" width="900"/>`{=html}
-```{=html}
+  <img src="assets/B2.png" width="900"/>
 </p>
-```
+
 Shows probability of near-future impulse.\
 If \> 60% → Warning triggered.
 
@@ -239,13 +233,10 @@ If \> 60% → Warning triggered.
 
 ## 📊 Volatility Radar
 
-```{=html}
 <p align="center">
-```
-`<img src="assets/B3.png" width="900"/>`{=html}
-```{=html}
+  <img src="assets/B3.png" width="900"/>
 </p>
-```
+
 Radar Dimensions: - Night Risk - Salary Risk - Burst Risk - Category
 Volatility - Spend Spike
 
@@ -253,13 +244,10 @@ Volatility - Spend Spike
 
 ## 🧠 Behaviour Profile
 
-```{=html}
 <p align="center">
-```
-`<img src="assets/C1.png" width="900"/>`{=html}
-```{=html}
+  <img src="assets/C1.png" width="900"/>
 </p>
-```
+
 Displays: - Personality Type - Cluster ID - Top 3 Behavioural Triggers -
 Trigger Type Classification
 
@@ -270,13 +258,10 @@ Spike Trigger
 
 ## 🎮 Gamification Arena
 
-```{=html}
 <p align="center">
-```
-`<img src="assets/D1.png" width="900"/>`{=html}
-```{=html}
+  <img src="assets/D1.png" width="900"/>
 </p>
-```
+
 Displays: - Self-Control Strength Index - Behaviour Challenges -
 Discipline Streak - Badges Earned - Improvement Tracking
 
@@ -284,13 +269,10 @@ Discipline Streak - Badges Earned - Improvement Tracking
 
 ## 📈 Financial Forecast
 
-```{=html}
 <p align="center">
-```
-`<img src="assets/E1.png" width="900"/>`{=html}
-```{=html}
+  <img src="assets/E1.png" width="900"/>
 </p>
-```
+
 Displays: - 30-Day Behavioural Trend - Trend Slope - Stability
 Indicator - Behavioural Drift Score
 
@@ -298,16 +280,80 @@ Indicator - Behavioural Drift Score
 
 # 🏗️ Project Structure
 
-Orgx_1148/ │ ├── backend/ │ ├── app.py │ ├── data/ │ │ └── processed/ │
-├── models/ │ ├── src/ │ │ ├── data_loader.py │ │ ├── risk_service.py │
-│ ├── upcoming_service.py │ │ ├── profile_service.py │ │ ├──
-trigger_service.py │ │ ├── gamification_service.py │ │ ├──
-volatility_service.py │ │ └── forecast_service.py │ └── requirements.txt
-│ ├── frontend/ │ ├── src/ │ │ ├── components/ │ │ ├── pages/ │ │ ├──
-lib/ │ │ └── hooks/ │ └── package.json │ ├── notebooks/ │ ├──
-01_data_generation.ipynb │ ├── 02_feature_engineering.ipynb │ ├──
-03_risk_model_training.ipynb │ ├── 04_clustering_analysis.ipynb │ └──
-05_upcoming_risk_prediction.ipynb │ ├── assets/ │ └── UI Screenshots │
+Orgx_1148/
+
+│
+
+├── backend/
+
+│   ├── app.py
+
+│   ├── data/
+
+│   │   └── processed/
+
+│   ├── models/
+
+│   ├── src/
+
+│   │   ├── data_loader.py
+
+│   │   ├── risk_service.py
+
+│   │   ├── upcoming_service.py
+
+│   │   ├── profile_service.py
+
+│   │   ├── trigger_service.py
+
+│   │   ├── gamification_service.py
+
+│   │   ├── volatility_service.py
+
+│   │   └── forecast_service.py
+
+│   └── requirements.txt
+
+│
+
+├── frontend/
+
+│   ├── src/
+
+│   │   ├── components/
+
+│   │   ├── pages/
+
+│   │   ├── lib/
+
+│   │   └── hooks/
+
+│   └── package.json
+
+│
+
+├── notebooks/
+
+│   ├── 01_data_generation.ipynb
+
+│   ├── 02_feature_engineering.ipynb
+
+│   ├── 03_risk_model_training.ipynb
+
+│   ├── 04_clustering_analysis.ipynb
+
+│   └── 05_upcoming_risk_prediction.ipynb
+
+│
+
+├── assets/
+
+│   └── UI Screenshots
+
+│
+
+├── requirements.txt
+
 └── README.md
 
 ------------------------------------------------------------------------
