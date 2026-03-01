@@ -170,7 +170,7 @@ Model: KMeans
 
 Used for personality segmentation.
 
-Silhouette analysis → optimal k = 3
+Silhouette analysis → optimal k = 4
 
 Cluster Profiles:
 
