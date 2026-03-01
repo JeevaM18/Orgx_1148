@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 230 50% 7%;
+    --foreground: 210 40% 95%;
+
+    --card: 230 40% 12%;
+    --card-foreground: 210 40% 95%;
+
+    --popover: 230 40% 12%;
+    --popover-foreground: 210 40% 95%;
+
+    --primary: 185 100% 50%;
+    --primary-foreground: 230 50% 7%;
+
+    --secondary: 270 80% 60%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 230 30% 18%;
+    --muted-foreground: 215 20% 60%;
+
+    --accent: 270 80% 60%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 80% 55%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 230 30% 22%;
+    --input: 230 30% 18%;
+    --ring: 185 100% 50%;
+
+    --radius: 0.75rem;
+
+    --neon-cyan: 185 100% 50%;
+    --neon-purple: 270 80% 60%;
+    --neon-blue: 220 100% 60%;
+    --neon-green: 150 80% 50%;
+    --neon-yellow: 45 100% 55%;
+    --neon-red: 0 80% 55%;
+
+    --glass-bg: 230 40% 12%;
+    --glass-border: 230 30% 30%;
+
+    --sidebar-background: 230 50% 7%;
+    --sidebar-foreground: 210 40% 95%;
+    --sidebar-primary: 185 100% 50%;
+    --sidebar-primary-foreground: 230 50% 7%;
+    --sidebar-accent: 270 80% 60%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 230 30% 22%;
+    --sidebar-ring: 185 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+    background: linear-gradient(135deg, hsl(230, 50%, 7%) 0%, hsl(260, 50%, 12%) 50%, hsl(270, 40%, 15%) 100%);
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-card/40 backdrop-blur-xl border border-glass-border rounded-xl;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37), inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
+  }
+
+  .glass-card-hover {
+    @apply glass-card transition-all duration-300;
+  }
+
+  .glass-card-hover:hover {
+    box-shadow: 0 8px 32px 0 rgba(0, 210, 255, 0.15), inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border-color: hsl(var(--neon-cyan) / 0.3);
+  }
+
+  .neon-text-cyan {
+    @apply text-primary;
+    text-shadow: 0 0 10px hsl(var(--neon-cyan) / 0.5), 0 0 40px hsl(var(--neon-cyan) / 0.2);
+  }
+
+  .neon-text-purple {
+    @apply text-secondary;
+    text-shadow: 0 0 10px hsl(var(--neon-purple) / 0.5), 0 0 40px hsl(var(--neon-purple) / 0.2);
+  }
+
+  .neon-glow-cyan {
+    box-shadow: 0 0 15px hsl(var(--neon-cyan) / 0.3), 0 0 45px hsl(var(--neon-cyan) / 0.1);
+  }
+
+  .neon-glow-purple {
+    box-shadow: 0 0 15px hsl(var(--neon-purple) / 0.3), 0 0 45px hsl(var(--neon-purple) / 0.1);
+  }
+
+  .neon-border-cyan {
+    border-color: hsl(var(--neon-cyan) / 0.4);
+  }
+
+  .progress-bar-fill {
+    background: linear-gradient(90deg, hsl(var(--neon-cyan)), hsl(var(--neon-purple)));
+    border-radius: 9999px;
+    transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .progress-bar-track {
+    @apply bg-muted rounded-full overflow-hidden;
+  }
+
+  .badge-unlock {
+    @apply inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-sm font-display font-semibold;
+    background: linear-gradient(135deg, hsl(var(--neon-cyan) / 0.2), hsl(var(--neon-purple) / 0.2));
+    border: 1px solid hsl(var(--neon-cyan) / 0.3);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Orbitron', monospace;
+  }
+
+  .font-heading {
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
+}

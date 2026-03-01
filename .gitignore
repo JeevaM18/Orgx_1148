@@ -1,0 +1,95 @@
+########################################
+# 🔐 ENVIRONMENT FILES
+########################################
+.env
+.env.*
+*.env
+
+########################################
+# 🐍 PYTHON (BACKEND)
+########################################
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+venv/
+backend/venv/
+frontend/venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+########################################
+# 📦 NODE / FRONTEND (VITE + REACT)
+########################################
+node_modules/
+frontend/node_modules/
+
+dist/
+build/
+.vite/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+########################################
+# 🧠 MODEL FILES (OPTIONAL – IF LARGE)
+########################################
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+
+########################################
+# 📊 DATA FILES (IF LARGE OR PRIVATE)
+########################################
+backend/data/raw/
+backend/data/processed/
+
+# OR ignore only large CSVs
+*.csv
+
+########################################
+# 🗃 SYSTEM FILES
+########################################
+.DS_Store
+Thumbs.db
+
+########################################
+# 🧪 TEST OUTPUTS
+########################################
+out.txt
+out2.txt
+
+########################################
+# 📄 IDE / EDITOR
+########################################
+.vscode/
+.idea/
+
+########################################
+# 🔍 CACHE
+########################################
+.pytest_cache/
+.cache/
+.mypy_cache/
+
+########################################
+# 🔥 FASTAPI UVICORN
+########################################
+*.log
+logs/
+
+########################################
+# 🧪 COVERAGE
+########################################
+coverage/
+htmlcov/
+.coverage
